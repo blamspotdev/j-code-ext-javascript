@@ -1,0 +1,42 @@
+id: jcode.lang.javascript
+name: JavaScript Language Pack
+publisher: jcode
+version: 0.1.0
+type: language
+description: Coding suggestions, a basic formatter, and helpers for JavaScript.
+language:
+  id: javascript
+  extensions: [".js", ".jsx", ".mjs", ".cjs"]
+  comment:
+    line: "//"
+    blockStart: "/*"
+    blockEnd: "*/"
+  formatter:
+    command: "npx --yes prettier --write {{file}} 2>/dev/null || true"
+    indent: 2
+    trimTrailingWhitespace: true
+    insertFinalNewline: true
+  completions:
+    - label: cl
+      detail: console.log
+      insert: "console.log($0);"
+    - label: fn
+      detail: function
+      insert: "function $1($2) {\n  $0\n}"
+    - label: af
+      detail: arrow function
+      insert: "const $1 = ($2) => {\n  $0\n};"
+    - label: imp
+      detail: import
+      insert: "import $1 from '$2';"
+    - label: forof
+      detail: for...of loop
+      insert: "for (const $1 of $2) {\n  $0\n}"
+    - label: tc
+      detail: try/catch
+      insert: "try {\n  $0\n} catch (err) {\n  console.error(err);\n}"
+  helpers:
+    - title: Export default
+      snippet: "export default $1;"
+    - title: JSON parse guard
+      snippet: "const $1 = JSON.parse($2 ?? '{}');"
