@@ -1,7 +1,7 @@
 id: jcode.lang.javascript
 name: JavaScript Language Pack
 publisher: jcode
-version: 0.1.0
+version: 0.1.1
 type: language
 description: Coding suggestions, a basic formatter, and helpers for JavaScript.
 language:

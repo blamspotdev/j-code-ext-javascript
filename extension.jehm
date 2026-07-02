@@ -2,7 +2,7 @@
 schema: 1
 uniqueName: jcode.lang.javascript
 name: JavaScript Language Pack
-version: 0.1.0
+version: 0.1.1
 type: language
 publisher: jcode
 shortDescription: Coding suggestions, a basic formatter, and helpers for JavaScript.
@@ -19,7 +19,7 @@ suggests:
   lsps: [typescript-language-server]
   extensions: []
 images:
-  icon: media/icon.png
+  icon: media/icon.pngmedia/icon.png
   samples: []
   walkthrough: []
 entry:
