@@ -1,7 +1,7 @@
 id: jcode.lang.javascript
-name: JavaScript Language Pack
+name: JavaScript Dev Pack
 publisher: jcode
-version: 0.2.0
+version: 0.2.1
 type: language
 requires:
   lsps: [typescript-language-server]
